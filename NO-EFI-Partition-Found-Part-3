@@ -1,0 +1,57 @@
+Please follow the easiest method to correct the boot menu using the Boot-Repair method for Ubuntu 
+- - [ 100% working for all types of BIOS. ] - - -
+
+Check bios on your system (LINUX)
+sudo apt install efibootmgr
+sudo efibootmgr
+
+Check bios type on your system (Windows 10)
+search for 
+System Information
+Step 0 Follow the installation process-
+
+Part-1 For legacy BIOS
+Part-2 For UEFI
+
+******************************************************
+------------------------------------------------------
+No EFI System Partition was found Ubuntu Error Solved
+------------------------------------------------------
+******************************************************
+
+Follow the easy steps written below:
+Step 1- Power off your Linux desktop or restart it once.
+
+Step 2- Press the keys to load the boot menu. For example F7 or ESC 
+
+Step 3- Select the Disk UEFI (to boot with) and hit enter.
+
+Step 4- Select *Ubuntu and hit enter. Wait until disk check gets completed.
+
+Step 5- Click on Try Ubuntu
+
+Step 6- Open the terminal or press ctrl+t.
+
+Step 7- Note: Everything we are going to do will be temporary to fix the boot loader issue. Once you disconnect the USB stick everything will be wiped from the test os.
+
+Now we will run some commands to fix things:
+#- - - Add a repository to install boot-repair:
+sudo add-apt-repository ppa:yannubuntu/boot-repair
+
+#- - - Update:
+sudo apt-get update
+
+#- - - Install boot-repair:
+sudo apt-get install boot-repair
+
+Step 8- Close the terminal and open Boot Repair from Ubuntu Menu.
+
+Step 9- Wait for some time. Click on the Recommended repair (first option). It will identify your system type and try to fix everything.
+
+Step 10- Press y to upload the report. It will create all the boot information inside the EFI boot loader.
+
+Press 11- you will see an error in front of you. Ignore that and Turn off the system.
+
+Step 12- Remove the disk and hit enter.
+
+ Please subscribe :) 
